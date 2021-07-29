@@ -1,0 +1,213 @@
+body {
+	margin: 0px;
+	background-color: #242333;
+	font-family: "Open Sans", sans-serif;
+}
+
+#booking-section-container {
+	height: 400px;
+	width: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#selector-container {
+	margin-bottom: 40px;
+}
+
+#pickmovie {
+	color: white;
+	font-size: 15px;
+	margin: 25px 0px 0px -8px;
+	display: inline-block;
+}
+
+#movie-selection-menu {
+	margin: 0 10px;
+	padding: 5px 16px;
+	border: none;
+	border-radius: 5.6px;
+	font-size: 14px;
+	appearance: none;
+}
+
+#reference-container {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	height: 28px;
+	position: relative;
+	top: -4px;
+}
+
+#reference-list {
+	list-style-type: none;
+	position: relative;
+	top: 2px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 22px;
+}
+
+#reference-container p {
+	display: inline;
+	color: #777;
+	font-size: 13.6px;
+	font-weight: 600;
+	margin: 0px;
+}
+
+#reference-container .seat {
+	position: relative;
+	bottom: -1px;
+}
+
+#reference-container .seat:hover {
+	cursor: default;
+	transform: scale(1);
+}
+
+#reference-list li {
+	display: inline;
+}
+
+#reference-list li:nth-of-type(2) > div {
+	background-color: #6feaf6;
+}
+
+#reference-list li:nth-of-type(3) > div {
+	background-color: white;
+}
+
+#reservation-container {
+	perspective: 1000px;
+}
+
+#reservation-container .seat:hover {
+	cursor: pointer;
+}
+
+#reservation-container > div:nth-child(2) {
+	margin-top: 13px;
+}
+
+#reservation-container .seat {
+	margin: 0px 1.1px;
+}
+
+#reservation-container .whiteseat {
+	margin: 0px 1.1px;
+}
+
+#reservation-container .cyanseat {
+	margin: 0px 1.1px;
+}
+
+#movie-screen {
+	height: 70px;
+	width: 198px;
+	background-color: white;
+	box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
+	transform: rotateX(-45deg);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 27px;
+}
+
+#seats-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#seats-container > div {
+	height: 18px;
+}
+
+.seat {
+	background-color: #444451;
+	height: 12px;
+	width: 15px;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	display: inline-block;
+}
+
+.seat:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.cyanseat {
+	background-color: cyan;
+	height: 12px;
+	width: 15px;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	display: inline-block;
+}
+
+.cyanseat:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.whiteseat {
+	background-color: white;
+	height: 12px;
+	width: 15px;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	display: inline-block;
+}
+
+.whiteseat:hover {
+	cursor: not-allowed;
+}
+
+#buttons-container {
+	height: auto;
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#buttons-container > button {
+	margin: 0 20px;
+	height: 30px;
+	width: auto;
+}
+
+#buttons-container > button:hover {
+	cursor: pointer;
+}
+
+#buttons-container > button:active {
+	opacity: 0.6;
+}
+
+#confirm-button {
+	background-color: transparent;
+	outline: none;
+	border: solid 2px #444451;
+	border-radius: 4px;
+	color: whitesmoke;
+	font-size: 16px;
+}
+
+#reset-button {
+	background-color: transparent;
+	outline: none;
+	border: solid 2px #444451;
+	border-radius: 4px;
+	color: whitesmoke;
+	font-size: 16px;
+}
+
+#total-container {
+	color: white;
+	font-size: 16px;
+	text-align: center;
+}

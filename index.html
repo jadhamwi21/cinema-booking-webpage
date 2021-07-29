@@ -1,0 +1,135 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Book Movie Seat</title>
+	</head>
+
+	<body
+		onload="show_Results(document.getElementById('movie-selection-menu').value)"
+	>
+		<div id="booking-section-container">
+			<div id="selector-container">
+				<h3 id="pickmovie">Pick a movie:</h3>
+				<select id="movie-selection-menu" onchange="show_Results(this.value)">
+					<option>Unhinged ($15)</option>
+					<option>The Invisible Man ($10)</option>
+					<option>Tenet ($8)</option>
+					<option>Antebellum ($2)</option>
+					<option>Saw ($5)</option>
+					<option>Conjuring ($20)</option>
+				</select>
+			</div>
+			<div id="reference-container">
+				<ul id="reference-list">
+					<li>
+						<div class="seat"></div>
+						<p>N/A</p>
+					</li>
+					<li>
+						<div class="seat"></div>
+						<p>Selected</p>
+					</li>
+					<li>
+						<div class="seat"></div>
+						<p>Occupied</p>
+					</li>
+				</ul>
+			</div>
+			<div id="reservation-container">
+				<div id="movie-screen"></div>
+				<div id="seats-container">
+					<div id="row1">
+						<div class="seat" style="margin-left: 45px"></div>
+						<div class="seat" style="margin-right: 15px"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div
+							class="seat"
+							style="margin-right: 15px; position: relative; left: -1"
+						></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+					</div>
+					<div id="row2">
+						<div class="seat" style="margin-left: 45px"></div>
+						<div class="seat" style="margin-right: 15px"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div
+							class="seat"
+							style="margin-right: 15px; position: relative; left: -1"
+						></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+					</div>
+					<div id="row3">
+						<div class="seat" style="margin-left: 45px"></div>
+						<div class="seat" style="margin-right: 15px"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div
+							class="seat"
+							style="margin-right: 15px; position: relative; left: -1"
+						></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+					</div>
+					<div id="row4">
+						<div class="seat" style="margin-left: 45px"></div>
+						<div class="seat" style="margin-right: 15px"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div
+							class="seat"
+							style="margin-right: 15px; position: relative; left: -1"
+						></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+					</div>
+					<div id="row5">
+						<div class="seat" style="margin-left: 45px"></div>
+						<div class="seat" style="margin-right: 15px"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div
+							class="seat"
+							style="margin-right: 15px; position: relative; left: -1"
+						></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+					</div>
+					<div id="row6">
+						<div class="seat" style="margin-left: 45px"></div>
+						<div class="seat" style="margin-right: 15px"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+						<div
+							class="seat"
+							style="margin-right: 15px; position: relative; left: -1"
+						></div>
+						<div class="seat"></div>
+						<div class="seat"></div>
+					</div>
+				</div>
+			</div>
+			<div id="total-container">your total cost is 0$ for 0 seats</div>
+			<div id="buttons-container">
+				<button id="confirm-button">Confirm</button>
+				<button id="reset-button">Reset</button>
+			</div>
+		</div>
+		<script src="func.js"></script>
+	</body>
+</html>
